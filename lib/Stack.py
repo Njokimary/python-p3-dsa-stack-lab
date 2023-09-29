@@ -1,7 +1,11 @@
 class Stack:
 
-    def __init__(self, items = [], limit = 100):
-        pass
+    def __init__(self, items=None, limit=100):
+        if items is None:
+            items = []
+        self.items = items
+        self.limit = limit
+
 
     def isEmpty(self):
         pass
